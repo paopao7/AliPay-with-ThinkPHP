@@ -5,6 +5,8 @@
     <meta id="viewport" name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1; user-scalable=no;">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="/AliPay/Public/css/common.css" />
+    <script src="http://cdn.bootcss.com/jquery/1.12.3/jquery.min.js"></script>
+    <script type="text/javascript" src="/AliPay/Public/js/layer/layer.js"></script>
 </head>
 <body>
     <div class="header_box">
@@ -23,7 +25,7 @@
                 <img class="list_item_img" src="./Public/image/right.png" width="20px" />
             </div>
         </a>
-        <a href="">
+        <a href="javascript:void" id="scan_pay" onclick="on_building()">
             <div class="list_item">
                 扫码支付
                 <img class="list_item_img" src="./Public/image/right.png" width="20px" />
@@ -54,4 +56,9 @@
         ©版权归本人所有，联系QQ：980569038
     </div>
 </body>
+<script type="text/javascript">
+    function on_building () {
+        layer.msg('该功能开发中...');
+    }
+</script>
 </html>
